@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ioicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Project JS -->
+    <script src="./js//script.js" defer></script>
+    <title>ToDo List | Avançada</title>
+  </head>
+  <body>
+        <section class="todo_container">
+            <header>
+                <h1>ToDo Avançado</h1>
+            </header>
+            <form id="todo_form">
+                <p>Adicione suas tarefas:</p>
+                <div class="form_control">
+                    <input
+                    type="text"
+                    id="todo_input"
+                    placeholder="O que você vai fazer?"
+                    />
+                    <button type="submit">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </button>
+                </div>
+            </form>
+            <form id="edit_form" class="hide">
+                <p>Edite a sua tarefa:</p>
+                <div class="form_control">
+                    <input type="text" id="edit_input" placeholder="" />
+                    <button type="submit">
+                        <ion-icon name="checkmark-done-outline"></ion-icon>
+                    </button>
+                </div>
+                <button id="cancel_edit_btn">Cancelar Edição</button>
+            </form>
+            <div id="toolbar">
+                <div id="search">
+                    <h4>Pesquisar</h4>
+                    <form>
+                        <input type="text" id="search_input" placeholder="Buscar" />
+                        <button id="clear_query">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+                </form>
+                <div id="filter">
+                    <h4>Filtrar</h4>
+                    <select id="filter_select">
+                        <option value="all">Todos</option>
+                        <option value="done">Feitos</option>
+                        <option value="todo">Pendentes</option>
+                    </select>
+                </div>
+            </div>
+            <div id="todo_list">
+                <!-- <div class="todo done ">
+                    <h3>Estou fazendo alguma coisa</h3>
+                    <button class="finished_todo">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </button>
+                    <button class="edit_todo">
+                        <ion-icon name="create-outline"></ion-icon>
+                    </button>
+                    <button class="remove_todo">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button>
+                </div>
+                <div class="todo">
+                    <h3>Estudar</h3>
+                    <button class="finished_todo">
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    </button>
+                    <button class="edit_todo">
+                        <ion-icon name="create-outline"></ion-icon>
+                    </button>
+                    <button class="remove_todo">
+                        <ion-icon name="close-circle-outline"></ion-icon>
+                    </button> -->
+                </div>
+            </div>
+        </section>
+    </body>
+    </html>
+    

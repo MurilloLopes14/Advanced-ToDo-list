@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --primary: #4459d6;
+  --secondary: #3a95d4;
+  --terciary: #131f27;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/night-3840x2160-mountains-sky-stars-4k-17796.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", "Roboto";
+}
+
+html {
+  height: 100vh;
+}
+
+button {
+  background-color: var(--secondary);
+  color: var(--terciary);
+  border: 2px solid var(--terciary);
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: var(--terciary);
+  color: aliceblue;
+}
+
+button:hover > ion-icon {
+  color: aliceblue;
+}
+
+button ion-icon {
+  color: var(--terciary);
+  pointer-events: none;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Header */
+.todo_container {
+  max-width: 450px;
+  margin: 3rem auto;
+  background-color: aliceblue;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.todo_container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Form (Edit & todo) */
+#todo_form,
+#edit_form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo_form p,
+#edit_form p {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.form_control {
+  display: flex;
+}
+
+.form_control input {
+  margin-right: 0.3rem;
+}
+
+#cancel_edit_btn {
+  margin-top: 1rem;
+}
+
+/* Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* ToDo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background-color: var(--primary);
+}
+
+.done h3 {
+  color: aliceblue;
+  text-decoration: line-through;
+  font-style: italic;
+}
